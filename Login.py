@@ -36,6 +36,8 @@ def face_login():
     global login_name, login_face_encoding
     # Initialize webcam
     cap = cv2.VideoCapture(0)
+    #video_path = './Security_Guard_Footage.mp4'
+    #cap = cv2.VideoCapture(video_path)
     cap.set(3, 640)
     cap.set(4, 480)
 
@@ -95,6 +97,8 @@ if face_login():
         # Continue with the rest of the application
         # Webcam
         cap = cv2.VideoCapture(0)
+        # video_path = './Security_Guard_Footage.mp4'
+        # cap = cv2.VideoCapture(video_path)
         cap.set(3, 520)
         cap.set(4, 620)
 
