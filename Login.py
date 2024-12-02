@@ -56,6 +56,7 @@ def face_login():
         # Find all face locations and face encodings in the frame
         face_locations = face_recognition.face_locations(rgb_small_frame)
         face_encodings = face_recognition.face_encodings(rgb_small_frame, face_locations)
+        print(f"Face locations: {face_locations}")
 
         for face_encoding in face_encodings:
             # See if the face is a match for any known face(s)
